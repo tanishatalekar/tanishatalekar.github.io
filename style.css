@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     margin-top: 60px;
-    color: #FFF0F5;
+    color: #F8C8DC;
 }
 
 section {
@@ -139,6 +139,7 @@ header {
 .section-heading h2 {
     font-size: 38px;
     margin-top: 8px;
+    color: #F8C8DC;
 }
 
 
