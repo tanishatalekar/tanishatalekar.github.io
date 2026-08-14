@@ -94,11 +94,11 @@ header {
 }
 
 .nav-links a:hover {
-    color: #5b5bf7;
+    color: #aa336a;
 }
 
 .nav-button {
-    background: #5b5bf7;
+    background: #aa336a;
     color: white;
     padding: 9px 18px;
     border-radius: 7px;
