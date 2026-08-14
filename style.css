@@ -12,9 +12,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
-    background: #fff0f5;
+    background: #ffffff;
     line-height: 1.6;
-    padding: 0 30px;
 }
 
 a {
@@ -33,14 +32,12 @@ img {
 ========================= */
 
 header {
-    position: sticky;
-    top: 15px;
-    z-index: 1000;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .navbar {
-    max-width: 1100px;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px 25px;
 
@@ -48,28 +45,27 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    background: rgba(255, 255, 255, 0.95);
+    background: #ffffff;
     border: 1px solid #eeeeee;
-    border-radius: 14px;
+    border-radius: 12px;
 
-    box-shadow: 0 5px 20px rgba(170, 51, 106, 0.08);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
-    color: #222;
 }
 
 .logo span {
-    color: #aa336a;
+    color: #AA336A;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
+    gap: 25px;
     list-style: none;
-    gap: 28px;
 }
 
 .nav-links a {
@@ -79,7 +75,19 @@ header {
 }
 
 .nav-links a:hover {
-    color: #aa336a;
+    color: #AA336A;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 0;
 }
 
 
@@ -88,60 +96,47 @@ header {
 ========================= */
 
 h1 {
-    font-size: 50px;
-    line-height: 1.15;
-    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #222;
 }
 
 h2 {
-    color: #aa336a;
-    font-size: 36px;
-    margin-bottom: 35px;
+    font-size: 34px;
+    color: #AA336A;
+    margin-bottom: 30px;
 }
 
 h3 {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 h4 {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 
 /* =========================
-   SECTIONS
+   SECTION HEADINGS
 ========================= */
-
-section {
-    margin-bottom: 0;
-}
-
-.section {
-    padding: 90px 30px;
-    max-width: 1200px;
-    margin: auto;
-}
 
 .section-heading {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .section-heading p {
-    color: #aa336a;
+    color: #AA336A;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 .section-heading h2 {
-    margin-top: 8px;
     margin-bottom: 0;
-}
-
-.section li {
-    margin-bottom: 12px;
 }
 
 
@@ -150,84 +145,83 @@ section {
 ========================= */
 
 .about-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .about-text {
+    text-align: left;
     font-size: 18px;
     color: #555;
+}
+
+.about-text > p:first-child {
+    color: #AA336A;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-text h1 {
+    color: #222;
+}
+
+.about-text h1 span {
+    color: #AA336A;
 }
 
 .about-text p {
     margin-bottom: 20px;
 }
 
-.about-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+
+/* =========================
+   GENERAL TEXT
+========================= */
+
+.section p {
+    color: #555;
 }
 
-.info-card {
-    padding: 25px;
-    background: white;
-    border-radius: 14px;
-    text-align: center;
-    border: 1px solid #f0dce5;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.section ul {
+    padding-left: 20px;
 }
 
-.info-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(170, 51, 106, 0.10);
-}
-
-.info-card span {
-    font-size: 30px;
-}
-
-.info-card h3 {
-    margin-top: 10px;
+.section li {
+    margin-bottom: 12px;
 }
 
 
 /* =========================
-   CONTENT CARDS
+   CONTENT
 ========================= */
 
-.content-card {
-    background: white;
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 14px;
-    border: 1px solid #f0dce5;
-    box-shadow: 0 5px 20px rgba(170, 51, 106, 0.05);
+.content {
+    max-width: 750px;
+    margin: 0 auto;
 }
 
-.content-card h3 {
-    color: #aa336a;
+.content h3 {
+    color: #AA336A;
+}
+
+.content-item {
+    margin-bottom: 35px;
 }
 
 
 /* =========================
-   EDUCATION
+   LINKS
 ========================= */
 
-.education-item {
-    background: white;
-    padding: 25px 30px;
-    margin-bottom: 18px;
-    border-left: 4px solid #aa336a;
-    border-radius: 0 12px 12px 0;
+.section a {
+    color: #AA336A;
 }
 
-.education-year {
-    color: #aa336a;
-    font-weight: bold;
-    font-size: 14px;
+.section a:hover {
+    text-decoration: underline;
 }
 
 
@@ -235,17 +229,10 @@ section {
    CONTACT
 ========================= */
 
-.contact-box {
-    text-align: center;
-    background: white;
-    padding: 40px;
-    border-radius: 16px;
-    border: 1px solid #f0dce5;
-}
-
-.contact-box a {
-    color: #aa336a;
-    font-weight: bold;
+.contact {
+    text-align: left;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 
@@ -255,22 +242,15 @@ section {
 
 @media (max-width: 768px) {
 
-    body {
-        padding: 0 15px;
-    }
-
-    header {
-        top: 5px;
-    }
-
     .navbar {
-        padding: 10px 15px;
+        width: 94%;
+        padding: 12px 15px;
         flex-direction: column;
         gap: 10px;
     }
 
     .logo {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .nav-links {
@@ -283,6 +263,11 @@ section {
         font-size: 13px;
     }
 
+    .section {
+        width: 90%;
+        padding: 60px 0;
+    }
+
     h1 {
         font-size: 38px;
     }
@@ -291,16 +276,7 @@ section {
         font-size: 30px;
     }
 
-    .section {
-        padding: 60px 15px;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .about-cards {
-        grid-template-columns: 1fr 1fr;
+    .about-text {
+        font-size: 16px;
     }
 }
