@@ -1,5 +1,5 @@
 /* =========================
-   GENERAL
+   RESET
 ========================= */
 
 * {
@@ -16,14 +16,18 @@ body {
     line-height: 1.6;
 }
 
+
+/* =========================
+   LINKS
+========================= */
+
 a {
+    color: #AA336A;
     text-decoration: none;
-    color: inherit;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -32,6 +36,7 @@ img {
 ========================= */
 
 header {
+    width: 100%;
     padding: 20px 0;
 }
 
@@ -39,6 +44,7 @@ header {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
+
     padding: 10px 25px;
 
     display: flex;
@@ -71,11 +77,19 @@ header {
 .nav-links a {
     color: #333;
     font-size: 14px;
-    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
     color: #AA336A;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 100%;
 }
 
 
@@ -85,9 +99,23 @@ header {
 
 .section {
     width: 90%;
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 70px 0;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.about-container,
+.content,
+.contact {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 
@@ -99,140 +127,65 @@ h1 {
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 25px;
-    color: #222;
 }
 
 h2 {
-    font-size: 34px;
     color: #AA336A;
+    font-size: 34px;
     margin-bottom: 30px;
 }
 
 h3 {
+    color: #AA336A;
+    font-size: 20px;
+    margin-top: 35px;
     margin-bottom: 15px;
 }
 
 h4 {
-    margin-bottom: 10px;
-}
-
-
-/* =========================
-   SECTION HEADINGS
-========================= */
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.section-heading p {
-    color: #AA336A;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-.section-heading h2 {
-    margin-bottom: 0;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about-container {
-    width: 100%;
-    max-width: 750px;
-    margin: 0 auto;
-}
-
-.about-text {
-    text-align: left;
     font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+p {
     color: #555;
-}
-
-.about-text > p:first-child {
-    color: #AA336A;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.about-text h1 {
-    color: #222;
-}
-
-.about-text h1 span {
-    color: #AA336A;
-}
-
-.about-text p {
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
 
 /* =========================
-   GENERAL TEXT
+   LISTS
 ========================= */
 
-.section p {
+ul {
+    padding-left: 25px;
+}
+
+li {
     color: #555;
-}
-
-.section ul {
-    padding-left: 20px;
-}
-
-.section li {
     margin-bottom: 12px;
 }
 
 
 /* =========================
-   CONTENT
+   EDUCATION
 ========================= */
 
-.content {
-    max-width: 750px;
-    margin: 0 auto;
-}
-
-.content h3 {
-    color: #AA336A;
-}
-
-.content-item {
+.timeline-item {
     margin-bottom: 35px;
 }
 
-
-/* =========================
-   LINKS
-========================= */
-
-.section a {
+.timeline-item span {
     color: #AA336A;
-}
-
-.section a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact {
-    text-align: left;
-    max-width: 750px;
-    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 
@@ -244,13 +197,9 @@ h4 {
 
     .navbar {
         width: 94%;
-        padding: 12px 15px;
         flex-direction: column;
         gap: 10px;
-    }
-
-    .logo {
-        font-size: 26px;
+        padding: 12px 15px;
     }
 
     .nav-links {
@@ -259,24 +208,17 @@ h4 {
         justify-content: center;
     }
 
-    .nav-links a {
-        font-size: 13px;
-    }
-
     .section {
         width: 90%;
-        padding: 60px 0;
-    }
-
-    h1 {
-        font-size: 38px;
+        padding: 50px 0;
     }
 
     h2 {
         font-size: 30px;
     }
 
-    .about-text {
+    p,
+    li {
         font-size: 16px;
     }
 }
