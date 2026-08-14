@@ -67,7 +67,7 @@ header {
 .navbar {
     max-width: 1000px;
     margin: 15px auto;
-    padding: 18px 30px;
+    padding: 10px 30px;
 
     display: flex;
     align-items: center;
