@@ -12,14 +12,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
-    background: #FFF0F5;
+    background: #fff0f5;
     line-height: 1.6;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 30px;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 img {
@@ -33,14 +33,16 @@ img {
 ========================= */
 
 header {
-    position: static;
-    padding: 0;
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+    padding: 15px 0;
 }
 
 .navbar {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 8px 25px;
+    padding: 10px 25px;
 
     display: flex;
     align-items: center;
@@ -48,32 +50,36 @@ header {
 
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid #eeeeee;
-    border-radius: 12px;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 20px rgba(170, 51, 106, 0.08);
 }
 
 .logo {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 700;
+    color: #222;
 }
 
 .logo span {
-    color: #AA336A;
+    color: #aa336a;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 25px;
+    gap: 28px;
 }
 
 .nav-links a {
     color: #333;
     font-size: 14px;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #AA336A;
+    color: #aa336a;
 }
 
 
@@ -83,21 +89,22 @@ header {
 
 h1 {
     font-size: 50px;
-    margin-bottom: 10px;
+    line-height: 1.15;
+    margin-bottom: 15px;
 }
 
 h2 {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    color: #AA336A;
+    color: #aa336a;
+    font-size: 36px;
+    margin-bottom: 35px;
 }
 
 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 h4 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 
@@ -106,20 +113,13 @@ h4 {
 ========================= */
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 .section {
     padding: 90px 30px;
     max-width: 1200px;
     margin: auto;
-
-
-.light-section {
-    max-width: none;
-    background: #FFF0F5;
-    padding-left: max(30px, calc((100% - 1140px) / 2));
-    padding-right: max(30px, calc((100% - 1140px) / 2));
 }
 
 .section-heading {
@@ -128,17 +128,20 @@ section {
 }
 
 .section-heading p {
-    color: #AA336A;
+    color: #aa336a;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .section-heading h2 {
-    font-size: 38px;
     margin-top: 8px;
-    margin-bottom: 40px;
-    color: #AA336A;
+    margin-bottom: 0;
+}
+
+.section li {
+    margin-bottom: 12px;
 }
 
 
@@ -170,9 +173,16 @@ section {
 
 .info-card {
     padding: 25px;
-    background: #FFF0F5;
-    border-radius: 12px;
+    background: white;
+    border-radius: 14px;
     text-align: center;
+    border: 1px solid #f0dce5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(170, 51, 106, 0.10);
 }
 
 .info-card span {
@@ -182,6 +192,115 @@ section {
 .info-card h3 {
     margin-top: 10px;
 }
-.section li {
-    margin-bottom: 12px;
+
+
+/* =========================
+   CONTENT CARDS
+========================= */
+
+.content-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    border: 1px solid #f0dce5;
+    box-shadow: 0 5px 20px rgba(170, 51, 106, 0.05);
+}
+
+.content-card h3 {
+    color: #aa336a;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-item {
+    background: white;
+    padding: 25px 30px;
+    margin-bottom: 18px;
+    border-left: 4px solid #aa336a;
+    border-radius: 0 12px 12px 0;
+}
+
+.education-year {
+    color: #aa336a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #f0dce5;
+}
+
+.contact-box a {
+    color: #aa336a;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 15px;
+    }
+
+    header {
+        top: 5px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
