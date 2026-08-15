@@ -22,12 +22,12 @@ body {
 ========================= */
 
 a {
-    color: #8F895F;
+    color: #6F965C;
     text-decoration: none;
 }
 
 a:hover {
-    color: #B2AC88;
+    color: #87AE73;
     text-decoration: underline;
 }
 
@@ -56,10 +56,10 @@ header {
     justify-content: space-between;
 
     background: #FFFFFF;
-    border: 1px solid #E5E3D6;
+    border: 1px solid #E1E8DC;
     border-radius: 12px;
 
-    box-shadow: 0 3px 15px rgba(80, 75, 45, 0.08);
+    box-shadow: 0 3px 15px rgba(70, 90, 60, 0.08);
 }
 
 .logo {
@@ -68,7 +68,7 @@ header {
 }
 
 .logo span {
-    color: #B2AC88;
+    color: #87AE73;
 }
 
 .nav-links {
@@ -84,7 +84,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #8F895F;
+    color: #6F965C;
 }
 
 
@@ -134,13 +134,13 @@ h1 {
 }
 
 h2 {
-    color: #8F895F;
+    color: #6F965C;
     font-size: 34px;
     margin-bottom: 20px;
 }
 
 h3 {
-    color: #8F895F;
+    color: #6F965C;
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 10px;
@@ -187,7 +187,7 @@ li {
 }
 
 .timeline-item span {
-    color: #8F895F;
+    color: #6F965C;
     font-size: 14px;
     font-weight: bold;
 }
