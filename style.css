@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: Garamond, "Times New Roman", serif;
+    font-family: "Calisto MT", Georgia, serif;
     color: #333333;
     background: #FAFAF7;
     line-height: 1.6;
@@ -106,6 +106,7 @@ main {
     max-width: 850px;
     margin: 0 auto;
     padding: 35px 0;
+    scroll-margin-top: 90px;
 }
 
 
