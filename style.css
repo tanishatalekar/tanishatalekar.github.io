@@ -80,7 +80,7 @@ header {
 
 .nav-links a {
     color: #444444;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .nav-links a:hover {
@@ -178,6 +178,7 @@ li {
     color: #333333;
     margin-bottom: 12px;
     font-size: 18px;
+    text-align: justify;
 }
 
 
@@ -224,8 +225,8 @@ li {
         font-size: 30px;
     }
 
-    p,
-    li {
-        font-size: 18px;
-    }
+   p,li {
+    font-size: 17px;
+    text-align: justify;
+   }
 }
