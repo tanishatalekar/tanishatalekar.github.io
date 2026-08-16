@@ -162,6 +162,7 @@ p {
     color: #333333;
     font-size: 18px;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 
@@ -176,6 +177,7 @@ ul {
 li {
     color: #333333;
     margin-bottom: 12px;
+    font-size: 18px;
 }
 
 
