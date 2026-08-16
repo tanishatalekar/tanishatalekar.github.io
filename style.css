@@ -122,7 +122,27 @@ main {
     margin: 0 auto;
     text-align: left;
 }
+/* =========================
+   ABOUT ME
+========================= */
 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #E1E8DC;
+}
 
 /* =========================
    HEADINGS
@@ -229,4 +249,18 @@ li {
     font-size: 17px;
     text-align: justify;
    }
+       .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 200px;
+        height: 200px;
+    }
 }
