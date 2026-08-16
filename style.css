@@ -159,8 +159,8 @@ h4 {
 ========================= */
 
 p {
-    color: #666666;
-    font-size: 17px;
+    color: #333333;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
@@ -174,7 +174,7 @@ ul {
 }
 
 li {
-    color: #666666;
+    color: #333333;
     margin-bottom: 12px;
 }
 
@@ -189,7 +189,7 @@ li {
 
 .timeline-item span {
     color: #87AE73;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -224,6 +224,6 @@ li {
 
     p,
     li {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
